@@ -10,6 +10,9 @@ namespace Euler
     {
         static void Main(string[] args)
         {
+            sumsqrdiff obj = new sumsqrdiff();
+            obj.difference();
+            Console.ReadKey();
         }
     }
 }
