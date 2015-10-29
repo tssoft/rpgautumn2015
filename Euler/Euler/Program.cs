@@ -22,7 +22,7 @@ namespace Euler
 
             Console.WriteLine(SumarizePrimesBelow.SumPrimesBelow(count));
             Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
-            //Console.WriteLine(Convert.ToString(MinimumFold.FindingMinimumFold()));
+            Console.WriteLine(MinimumFold.FindingMinimumFold());
             Console.ReadKey();
         }
     }
