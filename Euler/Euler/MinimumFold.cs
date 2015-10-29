@@ -1,37 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Euler
+﻿namespace Euler
 {
-    public static class MinimumFold
+    /// <summary>
+    /// Решение 5 задачи Эйлера. Класс для нахождения минимального кратного.
+    /// </summary>
+    /// Авторы: Баринова Е.А., Милантьев А.А.
+    public static class MinimumFoldCalculator
     {
-        static int leftBound = 1, rightBound = 20;
-        static uint minDigit = 2520;
-        /*public MinimumFold()
+        /// <summary>
+        /// Метод для нахождения наименьшего кратного.
+        /// </summary>
+        /// <param name="parLeftBound"></param>
+        /// <param name="parRightBound"></param>
+        /// <param name="refMinDigit"></param>
+        /// <returns name="refMinDigit"></returns>
+        public static uint FindMinimumFold(int parLeftBound, int parRightBound, uint refMinDigit)
         {
-            leftBound = 11;
-            rightBound = 20;
-            minDigit = 2520;
-        }*/
-        public static uint FindingMinimumFold()
-        {
-            bool flag = false;
-            uint MD = minDigit;
-            while (flag != true)
+            bool found = false;
+            while (!found)
             {
-                MD++;
-                for (int i = leftBound; i <= rightBound; i++)
+                refMinDigit++;
+                for (int i = parLeftBound; i <= parRightBound; i++)
                 {
-                    if (MD % i != 0)
+                    if (refMinDigit % i != 0)
+                    {
                         break;
-                    if (i == 20)
-                        flag = true;
+                    }
+                    found = i == parRightBound;
                 }
-
             }
-            return MD;
+            return refMinDigit;
         }
     }
 }
