@@ -4,19 +4,19 @@ using System.Collections.Generic;
 namespace Euler
 {
     /// <summary>
-    /// Класс, вычисляющий наибольший простой
-    /// делитель числа
+    /// Класс, вычисляющий наибольший простой делитель числа
     /// </summary>
     public class LagestPrimeFactor
     {
-        // конструктор по умолчанию
-        public LagestPrimeFactor() { }
-        // получить наибольший простой делитель числа
-        public Int32 GetLagestPrimeFactor(Int64 number)
-        {
-            List<Int32> primeNumbers = EratosthenSieve((Int32)Math.Sqrt(number));
+        // Конструктор по умолчанию
+        public LagestPrimeFactor() 
+        { }
 
-            for (Int32 i = primeNumbers.Count - 1; i > 1; i--)
+        // Получить наибольший общий простой делитель числа 
+        public int GetLagestPrimeFactor(long number)
+        {
+            List<int> primeNumbers = GetRangePrimeFactor((int)Math.Sqrt(number));
+            for (int i = primeNumbers.Count - 1; i > 1; i--)
             {
                 if (number % primeNumbers[i] == 0)
                 {
@@ -25,37 +25,56 @@ namespace Euler
             }
             return -1;
         }
-        // решето Эратосфена, вычисляет ряд простых чисел
-        private List<Int32> EratosthenSieve(Int32 num)
-        {
-            List<Boolean> listOfBool = new List<Boolean>();
 
-            for (Int32 i = 0; i < num; i++)
+        // Получаем ряд простых чисел
+        private List<int> GetRangePrimeFactor(int num)
+        {
+            // получаем список булевых переменных 
+            List<bool> listOfBool = GetListOfBool(num);
+            // вычерикваем составные числа от 2 до заданного
+            listOfBool = CrossOutNumber(listOfBool);
+            // получаем список простых чисел
+            return GetListOfInt(listOfBool);   
+        }
+
+        // Получаем список булевых значений
+        private List<bool> GetListOfBool(int num)
+        {
+            List<bool> listOfBool = new List<bool>();
+            for (int i = 0; i < num; i++)
             {
                 listOfBool.Add(true);
             }
+            return listOfBool;
+        }
 
-            for (Int32 i = 2; i * i < listOfBool.Count; i++)
+        // Вычеркиваем составные числа
+        private List<bool> CrossOutNumber(List<bool> listOfBool)
+        {
+           for (int i = 2; i * i < listOfBool.Count; i++)
             {
-                if (listOfBool[i] == true)
+                if (listOfBool[i])
                 {
-                    for (Int32 j = i * i; j < listOfBool.Count; j += i)
+                    for (int j = i * i; j < listOfBool.Count; j += i)
                     {
                         listOfBool[j] = false;
                     }
                 }
             }
+           return listOfBool;
+        }
 
-            List<Int32> listOfInt = new List<Int32>();
-
-            for (Int32 i = 2; i < listOfBool.Count; i++)
+        // Получаем список простых чисел
+        private List<int> GetListOfInt(List<bool> listOfBool)
+        {
+            List<int> listOfInt = new List<int>();
+            for (int i = 2; i < listOfBool.Count; i++)
             {
-                if (listOfBool[i] == true)
+                if (listOfBool[i])
                 {
                     listOfInt.Add(i);
                 }
             }
-
             return listOfInt;
         }
     }
