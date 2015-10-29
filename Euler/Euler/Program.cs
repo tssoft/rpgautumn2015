@@ -19,8 +19,9 @@ namespace Euler
             //0
 
             int count = 2000000;
+            Console.Write("Сумма первых " + count + " простых чисел: ");
+            Console.WriteLine(EulerTask.SumarizePrimesBelow(count));
 
-            Console.WriteLine(SumarizePrimesBelow.SumPrimesBelow(count));
             Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
             Console.WriteLine(MinimumFold.FindingMinimumFold());
             Console.ReadKey();
