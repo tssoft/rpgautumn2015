@@ -15,7 +15,15 @@ namespace Euler
         // Получить наибольший общий простой делитель числа 
         public int GetLagestPrimeFactor(long number)
         {
+            // получить ряд простых чисел
             List<int> primeNumbers = GetRangePrimeFactor((int)Math.Sqrt(number));
+            // вернуть наибольший общий простой делитель
+            return GetLagestPrimeFactor(primeNumbers, number);
+        }
+
+        // Получаем наибольший общий простой делитель
+        private int GetLagestPrimeFactor(List<int> primeNumbers, long number)
+        {
             for (int i = primeNumbers.Count - 1; i > 1; i--)
             {
                 if (number % primeNumbers[i] == 0)
