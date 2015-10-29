@@ -13,6 +13,7 @@ namespace Euler
             LagestPrimeFactor lpf = new LagestPrimeFactor();
             Console.Write("Наибольший простой делитель числа 600851475143 есть: ");
             Console.WriteLine(lpf.GetLagestPrimeFactor(600851475143));
+
             //kuujenga's
             sumsqrdiff obj = new sumsqrdiff();
             obj.difference();
