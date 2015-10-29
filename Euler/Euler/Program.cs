@@ -8,13 +8,20 @@ namespace Euler
 {
     internal class Program
     {
-
-
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
             Problem_4.Solution();
             Console.ReadKey();
+            LagestPrimeFactor lpf = new LagestPrimeFactor();
+            Console.Write("Наибольший простой делитель числа 600851475143 есть: ");
+            Console.WriteLine(lpf.GetLagestPrimeFactor(600851475143));
+            sumsqrdiff obj = new sumsqrdiff();
+            obj.difference();
 
+            Console.WriteLine(SumarizePrimesBelow.SumPrimesBelow(count));
+            Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
+            Console.WriteLine(MinimumFold.FindingMinimumFold());
+            Console.ReadKey();
         }
     }
 
@@ -35,6 +42,7 @@ namespace Euler
                     Console.WriteLine(result);
                     if (Problem_4.IsPolindrom(result))
                     {
+                        Console.WriteLine("Полиндром произведения двух трехзначных чисел");
                         Console.WriteLine(result);
                     }
                     number2--;
@@ -84,7 +92,6 @@ namespace Euler
             {
                 return false;
             }
-
         }
     }
 }
