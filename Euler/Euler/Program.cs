@@ -10,15 +10,18 @@ namespace Euler
     {
         static void Main(string[] args)
         {
-            Problem_4.Solution();
-            Console.ReadKey();
+            //Problem_4.Solution();
+            //Console.ReadKey();
             LagestPrimeFactor lpf = new LagestPrimeFactor();
             Console.Write("Наибольший простой делитель числа 600851475143 есть: ");
             Console.WriteLine(lpf.GetLagestPrimeFactor(600851475143));
             sumsqrdiff obj = new sumsqrdiff();
             obj.difference();
 
-            Console.WriteLine(SumarizePrimesBelow.SumPrimesBelow(count));
+            int count = 200000;
+            Console.Write("\nСумма первых " + count + " простых чисел: ");
+            Console.WriteLine(EulerTask.SumarizePrimesBelow(count));
+
             Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
             Console.WriteLine(MinimumFold.FindingMinimumFold());
             Console.ReadKey();
