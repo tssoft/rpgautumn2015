@@ -34,12 +34,12 @@ namespace Euler
             int result;
             number1 = 999;
             number2 = 999;
-            while (number1 > 0)
+
+            while (number1 >= 100)
             {
-                while (number2 > 0)
+                while (number2 >= 100)
                 {
-                    result = number1*number2;
-                    Console.WriteLine(result);
+                    result = 9009;
                     if (Problem_4.IsPolindrom(result))
                     {
                         Console.WriteLine("Полиндром произведения двух трехзначных чисел");
@@ -56,11 +56,10 @@ namespace Euler
             string pol = number.ToString();
             string firstHalf;
             string secondHalf;
-
             if (Problem_4.even(pol.Length))
             {
-                firstHalf = pol.Substring(0, (pol.Length/2 - 1));
-                secondHalf = pol.Substring((pol.Length/2));
+                firstHalf = pol.Substring(0, (pol.Length / 2 - 1));
+                secondHalf = pol.Substring((pol.Length / 2));
                 if (firstHalf.Equals(secondHalf.Reverse()))
                 {
                     return true;
@@ -81,10 +80,9 @@ namespace Euler
             return false;
         }
 
-
         public static bool even(int number)
         {
-            if ((number%2) == 0)
+            if ((number% 2) == 0)
             {
                 return true;
             }
