@@ -6,48 +6,85 @@ using System.Threading.Tasks;
 
 namespace Euler
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+
+
+        private static void Main(string[] args)
         {
+            Problem_4.Solution();
+            Console.ReadKey();
 
         }
     }
 
-    static class problem_4
+    internal static class Problem_4
     {
-        static public void solution()
+        public static void Solution()
         {
-            int number1, number2, result;
+            int number1;
+            int number2;
+            int result;
             number1 = 999;
             number2 = 999;
             while (number1 > 0)
             {
                 while (number2 > 0)
                 {
-                    result = number1 * number2;
-                    if (problem_4.polindrom(result))
+                    result = number1*number2;
+                    Console.WriteLine(result);
+                    if (Problem_4.IsPolindrom(result))
                     {
-
+                        Console.WriteLine(result);
                     }
                     number2--;
                 }
                 number1--;
             }
         }
-        static public bool polindrom(int number)
+
+        public static bool IsPolindrom(int number)
         {
             string pol = number.ToString();
-            if (problem_4.even(pol.Length))
+            string firstHalf;
+            string secondHalf;
+
+            if (Problem_4.even(pol.Length))
             {
-                
+                firstHalf = pol.Substring(0, (pol.Length/2 - 1));
+                secondHalf = pol.Substring((pol.Length/2));
+                if (firstHalf.Equals(secondHalf.Reverse()))
+                {
+                    return true;
+                }
+
             }
+            else
+            {
+                int part;
+                int temp = Math.DivRem(pol.Length + 1, 2, out part);
+                firstHalf = pol.Substring(0, temp - 1);
+                secondHalf = pol.Substring(temp + 1);
+                if (firstHalf.Equals(secondHalf.Reverse()))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
-        static public bool even(int number)
+
+        public static bool even(int number)
         {
-            if ((number % 2) == 0) return (true);
-            else return (false);
+            if ((number%2) == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
     }
 }
