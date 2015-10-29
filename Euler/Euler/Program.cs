@@ -42,7 +42,7 @@ namespace Euler
             {
                 while (number2 >= 100)
                 {
-                    result = 9009;
+                    result = number1 * number2;
                     if (Problem_4.IsPolindrom(result))
                     {
                         Console.WriteLine("Полиндром произведения двух трехзначных чисел");
