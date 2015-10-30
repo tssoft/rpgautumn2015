@@ -22,18 +22,17 @@ namespace Euler
             Console.Write("\nСумма первых " + count + " простых чисел: ");
             Console.WriteLine(EulerTask.SumarizePrimesBelow(count));
 
-<<<<<<< HEAD
+
             // 5 задание     
             Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");
             uint minDigit = MinimumFoldCalculator.FindMinimumFold(1, 20, 2520);
             Console.WriteLine(minDigit);
-=======
-            Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
-            Console.WriteLine(MinimumFold.FindingMinimumFold());
-            Problem_4 p4 = new Problem_4();
-            Console.WriteLine("Полиндром произведения 2-х трехзначных чисел:");
-            Console.WriteLine(p4.Solution());
->>>>>>> 593628de62de54527bdc36d5cc1bf296db237b7c
+
+            // Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
+            // Console.WriteLine(MinimumFold.FindingMinimumFold());
+            // Problem_4 p4 = new Problem_4();
+            //Console.WriteLine("Полиндром произведения 2-х трехзначных чисел:");
+            //Console.WriteLine(p4.Solution());
             Console.ReadKey();
         }
     }
