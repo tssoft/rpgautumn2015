@@ -9,12 +9,16 @@ namespace Euler
     internal class Program
     {
         static void Main(string[] args)
-        {
-            //Problem_4.Solution();
-            //Console.ReadKey();            
-            LagestPrimeFactor lpf = new LagestPrimeFactor();
-            Console.Write("Наибольший простой делитель числа 600851475143 есть: ");
-            Console.WriteLine(lpf.GetLagestPrimeFactor(600851475143));
+        {   
+            /* Вычисляем наибольший простой делитель числа */
+            var lpf = new LargestPrimeFactor();
+            long number = 600851475143;
+            int lagestPrimeFactor = lpf.ComputeLargestPrimeFactor(number);
+            Console.Write(String.Format("Наибольший простой делитель числа {0}: {1}", 
+                                        number, 
+                                        lagestPrimeFactor));
+            Console.WriteLine();
+
             sumsqrdiff obj = new sumsqrdiff();
             obj.difference();
 
