@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractEulerTask.cs" />
+    <Compile Include="IEulerTask.cs" />
     <Compile Include="LagestPrimeFactor.cs" />
     <Compile Include="MinimumFold.cs" />
+    <Compile Include="SumarizePrimesBelowTask.cs" />
     <Compile Include="sumsqrdiff.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

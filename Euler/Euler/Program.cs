@@ -18,9 +18,14 @@ namespace Euler
             sumsqrdiff obj = new sumsqrdiff();
             obj.difference();
 
-            int count = 200000;
-            Console.Write("\nСумма первых " + count + " простых чисел: ");
-            Console.WriteLine(EulerTask.SumarizePrimesBelow(count));
+            IEulerTask[] tasks = { new SumarizePrimesBelowTask(200000) };
+            foreach (var task in tasks)
+            {
+                task.Solve();
+                Console.WriteLine(task.t);
+                Console.WriteLine(task.Result);
+            }
+
 
             Console.WriteLine("Минимальное число, которое делится без остатка на все числа от 1 до 20:");//Решение задачи №5
             Console.WriteLine(MinimumFold.FindingMinimumFold());
