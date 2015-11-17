@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BombermanConsole.GameObject">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="cellStep" Hidden="true" />
+      <Method Name="GetAsyncKeyState" Hidden="true" />
+      <Property Name="IsDie" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Game" Type="BombermanConsole.Game">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.641" Y="0.018" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAACEQAAAAAAAAAgAgAAAAAAAAgAAAAAAAAAgAAAAEA=</HashCode>
+      <FileName>GameObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BombermanConsole.Game">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="children" Hidden="true" />
+      <Field Name="trash" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAEAAgAAQAIQAEAAAAAAACAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.MetallWall">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MetallWall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.BrickWall">
+    <Position X="7" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BrickWall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Explosion">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQCAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Explosion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Bomb">
+    <Position X="8.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bomb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Walker">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Walker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Player">
+    <Position X="9.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Enemy">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Door">
+    <Position X="1.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BombermanConsole.Drawing">
+    <Position X="13" Y="2" Width="1.5" />
+    <AssociationLine Name="Game" Type="BombermanConsole.Game" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="2.765" />
+        <Point X="12" Y="2.765" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.391" Y="0.008" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAiAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Drawing.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Game" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="BombermanConsole.GameTypes">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAAAAIAAAAAAAAAEAAAAAAAAACgAAQAAAAA=</HashCode>
+      <FileName>GameTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
