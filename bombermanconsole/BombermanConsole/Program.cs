@@ -16,7 +16,7 @@ namespace BombermanConsole
         {
             var game = new Game();
             Drawing.Game = game;
-            game.Load("map.cs");
+            game.Load("..\\..\\map.cs");
 
             // Q (quit)
             while (!game.IsGameOver && GetAsyncKeyState(0x51) == 0 )
