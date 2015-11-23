@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Reversi
 {
-    public class CellCheker
+    public class CellChecker
     {
         public Player Player
         {
@@ -18,7 +18,7 @@ namespace Reversi
             }
         }
     
-        public void CheckCell()
+        public bool CheckCell(int playerColor, int x, int y)
         {
             throw new System.NotImplementedException();
         }

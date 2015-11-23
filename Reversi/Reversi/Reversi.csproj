@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CellCheker.cs" />
+    <Compile Include="CellChecker.cs" />
     <Compile Include="Chip.cs" />
     <Compile Include="Finder.cs" />
     <Compile Include="Gameplay.cs" />

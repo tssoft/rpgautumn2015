@@ -7,7 +7,7 @@ namespace Reversi
 {
     public class Chip : IChip
     {
-        private int color;
+        public int color;
 
         public void Flip()
         {

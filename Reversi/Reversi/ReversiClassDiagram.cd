@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Не уверен, что правильно обозначил отношения стрелками">
-    <Position X="1.271" Y="4.167" Height="0.458" Width="2.419" />
+    <Position X="1.75" Y="4.584" Height="0.458" Width="2.419" />
   </Comment>
   <Class Name="Reversi.Player">
     <Position X="0.75" Y="2" Width="1.75" />
@@ -39,11 +39,11 @@
       <FileName>Info.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Reversi.CellCheker">
+  <Class Name="Reversi.CellChecker">
     <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
-      <FileName>CellCheker.cs</FileName>
+      <FileName>CellChecker.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Player" />
