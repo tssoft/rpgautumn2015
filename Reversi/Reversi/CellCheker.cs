@@ -5,12 +5,9 @@ using System.Text;
 
 namespace Reversi
 {
-    public class Player : IPlayer
+    public class CellCheker
     {
-        private int name;
-        private int color;
-
-        public Gameplay Gameplay
+        public Player Player
         {
             get
             {
@@ -20,24 +17,18 @@ namespace Reversi
             {
             }
         }
-
-        public UpendMaker UpendMaker
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public void PointOnCell()
+    
+        public void CheckCell()
         {
             throw new System.NotImplementedException();
         }
 
-        public void PutChip()
+        public void FindOpponentChip()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void FindPlayerChip()
         {
             throw new System.NotImplementedException();
         }

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Reversi
 {
-    public class GameAdmin
+    public class GameManager
     {
         private int numberOfMove;
 
-        public Player Player
+        public IPlayer IPlayer
         {
             get
             {

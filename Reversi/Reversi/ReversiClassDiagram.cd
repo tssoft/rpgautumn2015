@@ -6,11 +6,11 @@
   <Class Name="Reversi.Player">
     <Position X="0.75" Y="2" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAASAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAEAASAAAAAAgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Gameplay" />
+      <Property Name="UpendMaker" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -22,14 +22,14 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Reversi.GameAdmin">
+  <Class Name="Reversi.GameManager">
     <Position X="5.25" Y="2.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAAQQEABA=</HashCode>
+      <HashCode>IAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAAAQEABA=</HashCode>
       <FileName>Gameplay.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Player" />
+      <Property Name="IPlayer" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Reversi.GameInfo">
@@ -39,23 +39,22 @@
       <FileName>Info.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Reversi.Finder">
-    <Position X="7.25" Y="0.5" Width="2.25" />
+  <Class Name="Reversi.CellCheker">
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
-      <FileName>Finder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Reversi.Gameplay">
-    <Position X="5" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAAAAAQgAAAAEAAQAAAAAAAAAAA=</HashCode>
-      <FileName>Gameplay.cs</FileName>
+      <HashCode>AAAEAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>CellCheker.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="IChip" />
-      <Property Name="Finder" />
+      <Property Name="Player" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="Reversi.UpendMaker">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAA=</HashCode>
+      <FileName>UpendMaker.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Interface Name="Reversi.IPlayer">
     <Position X="0.75" Y="0.5" Width="1.5" />
