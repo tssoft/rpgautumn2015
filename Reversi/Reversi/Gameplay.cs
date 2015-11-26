@@ -9,17 +9,6 @@ namespace Reversi
     {
         private int numberOfMove;
 
-        public IPlayer IPlayer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public void StartGame()
         {
             throw new System.NotImplementedException();
@@ -30,7 +19,7 @@ namespace Reversi
             throw new System.NotImplementedException();
         }
 
-        public void StartMove()
+        public void StartTurn()
         {
             throw new System.NotImplementedException();
         }

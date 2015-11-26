@@ -10,27 +10,6 @@ namespace Reversi
         private int name;
         private int color;
 
-        public Gameplay Gameplay
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public UpendMaker UpendMaker
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
 
         public void PointOnCell()
         {

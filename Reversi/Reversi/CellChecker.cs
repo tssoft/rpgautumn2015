@@ -7,16 +7,6 @@ namespace Reversi
 {
     public class CellChecker
     {
-        public Player Player
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
     
         public bool CheckCell(int playerColor, int x, int y)
         {
