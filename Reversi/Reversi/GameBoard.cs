@@ -5,20 +5,26 @@ using System.Text;
 
 namespace Reversi
 {
-    public class ChipFinder
+    public class GameBoard : Reversi.IGameBoard
     {
-
-        public void FindOpponentChip()
+        private int gameBoard;
+    
+        public void GetCellState()
         {
             throw new System.NotImplementedException();
         }
 
-        public void FindPlayerChip()
+        public void PutChip()
         {
             throw new System.NotImplementedException();
         }
 
-        public void FindReversibleChips()
+        public void FlipChip()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void CheckCell()
         {
             throw new System.NotImplementedException();
         }

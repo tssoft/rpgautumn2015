@@ -15,10 +15,5 @@ namespace Reversi
         {
             throw new System.NotImplementedException();
         }
-
-        public void PutChip()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

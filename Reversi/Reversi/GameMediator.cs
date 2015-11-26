@@ -5,20 +5,14 @@ using System.Text;
 
 namespace Reversi
 {
-    public class ChipFinder
+    public class GameMediator
     {
-
-        public void FindOpponentChip()
+        public void PassMove()
         {
             throw new System.NotImplementedException();
         }
 
-        public void FindPlayerChip()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void FindReversibleChips()
+        public void RequestCheckCell()
         {
             throw new System.NotImplementedException();
         }

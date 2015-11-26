@@ -9,6 +9,5 @@ namespace Reversi
     {
         private int gameScore;
         private int playerQueue;
-        private int gameBoard;
     }
 }

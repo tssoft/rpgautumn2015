@@ -11,10 +11,5 @@ namespace Reversi
         {
             throw new System.NotImplementedException();
         }
-
-        public void UpendChips()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

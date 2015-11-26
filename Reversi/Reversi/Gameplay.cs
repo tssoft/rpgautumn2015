@@ -5,9 +5,11 @@ using System.Text;
 
 namespace Reversi
 {
-    public class GameManager
+    public class GameCore
     {
         private int numberOfMove;
+        private int playerQueue;
+        private int gameScore;
 
         public void StartGame()
         {
@@ -19,12 +21,12 @@ namespace Reversi
             throw new System.NotImplementedException();
         }
 
-        public void StartTurn()
+        public void UpdateGameScore()
         {
             throw new System.NotImplementedException();
         }
 
-        public void UpdateGameScore()
+        public void DetermineMoveOrder()
         {
             throw new System.NotImplementedException();
         }

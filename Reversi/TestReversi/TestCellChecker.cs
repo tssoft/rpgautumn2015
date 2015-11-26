@@ -21,7 +21,7 @@ namespace TestReversi
             testBoard[5, 5] = WhiteChip2;
             testBoard[4, 5] = BlackChip1;
             testBoard[5, 4] = BlackChip2;
-            var CellCheckerForTest=new CellChecker();
+            var CellCheckerForTest=new ChipFinder();
             //TODO
             bool expected = true;
             

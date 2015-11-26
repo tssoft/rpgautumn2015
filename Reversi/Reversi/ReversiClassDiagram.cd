@@ -1,50 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="Не уверен, что правильно обозначил отношения стрелками">
-    <Position X="1.75" Y="4.584" Height="0.458" Width="2.419" />
-  </Comment>
   <Class Name="Reversi.Player">
     <Position X="0.75" Y="2" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAASAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAASAAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Reversi.Chip">
-    <Position X="3" Y="2" Width="1.5" />
+    <Position X="8.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Chip.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Reversi.GameManager">
-    <Position X="6.25" Y="2.5" Width="1.75" />
+  <Class Name="Reversi.GameCore">
+    <Position X="0.75" Y="4.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAEAAgAAAAAAAAAAAAAAQAABA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAACAAAAQAAQgAAAAAAAAAAAAAAQAABA=</HashCode>
       <FileName>Gameplay.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Reversi.GameInfo">
-    <Position X="8.25" Y="2.25" Width="1.5" />
+  <Class Name="Reversi.ChipFinder">
+    <Position X="6.25" Y="4.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAACAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Info.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Reversi.CellChecker">
-    <Position X="4.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAEAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
       <FileName>CellChecker.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Reversi.UpendMaker">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+  <Class Name="Reversi.GameBoard">
+    <Position X="6.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAA=</HashCode>
-      <FileName>UpendMaker.cs</FileName>
+      <HashCode>AAAEAAAEAAAAAAAAAAAAAAQAAAAAAAAQAABAAAAAAAA=</HashCode>
+      <FileName>GameBoard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Reversi.GameMediator">
+    <Position X="3.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMediator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Reversi.IPlayer">
@@ -55,10 +53,17 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="Reversi.IChip">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IChip.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Reversi.IGameBoard">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>IGameBoard.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
