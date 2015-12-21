@@ -5,11 +5,16 @@ using System.Text;
 
 namespace Reversi
 {
-    public class Chip : IChip
+    public class Cell
     {
-        public int color;
-
-        public Cell Cell
+        private int Chip;
+        private int ID;
+        private int bottomCellStatus;
+        private int upperCellStatus;
+        private int rightCellStatus;
+        private int leftCellStatus;
+    
+        public GameBoard GameBoard
         {
             get
             {
@@ -18,11 +23,6 @@ namespace Reversi
             set
             {
             }
-        }
-
-        public void Flip()
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

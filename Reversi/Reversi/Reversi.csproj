@@ -41,11 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cell.cs" />
     <Compile Include="CellChecker.cs" />
     <Compile Include="Chip.cs" />
     <Compile Include="Finder.cs" />
+    <Compile Include="GameBoard.cs" />
+    <Compile Include="GameMediator.cs" />
     <Compile Include="Gameplay.cs" />
     <Compile Include="IChip.cs" />
+    <Compile Include="IGameBoard.cs" />
     <Compile Include="Info.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="Player.cs" />

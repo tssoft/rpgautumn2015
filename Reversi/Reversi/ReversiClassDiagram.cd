@@ -11,9 +11,12 @@
   <Class Name="Reversi.Chip">
     <Position X="8.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAEAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Chip.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cell" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Reversi.GameCore">
@@ -44,6 +47,16 @@
       <HashCode>AAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameMediator.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Reversi.Cell">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAhIAAAgAAAAAAAAAAAIAAAAAABACAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameBoard" />
+    </ShowAsAssociation>
   </Class>
   <Interface Name="Reversi.IPlayer">
     <Position X="0.75" Y="0.5" Width="1.5" />
